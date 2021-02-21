@@ -23,3 +23,7 @@ Many of us were unfamiliar with Python at the beginning of this project, so we l
 ## What’s next for Gradescope Scheduler
 As of right now, Gradescope Scheuler is a bit difficult to set up. It requires that each user must obtain their own Google credentials in order to connect the application to their Google Calendar. We hope to be able to make the application more user friendly so that everyone would be able to use the application. 
 
+## Open-source libraries used
+- Beautiful Soup
+- requests 
+- Google API Calendar
