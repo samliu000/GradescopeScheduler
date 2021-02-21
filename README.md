@@ -18,8 +18,8 @@ One of the challenges we ran into was our team’s unfamiliarity with Python. To
 One of the accomplishments that we are proud of is our ability to parse through the extensive data in order to retrieve the information that we needed. For example, we parsed through the HTML of the Gradescope website to find all of the assignment information for a given course. From there, we parsed the data such that it would be able to be passed into our functions. 
 
 ## What we learned
-Many of us were unfamiliar with Python at the beginning of this project, so we learned Python syntax as well as methods such as datetime and requests. We also learned how to utilize the Google Calendar API within our application, which is something many of us have not done before. Using the Google Calendar API, we learned how to create a new calendar and new events for existing calendars using the Calendar methods. 
+Many of us were unfamiliar with Python at the beginning of this project, so we learned Python syntax as well as methods such as datetime and requests. We also learned how to utilize the Google Calendar API within our application, which is something many of us have not done before. Using the Google Calendar API, we learned how to create a new calendar and new events for existing calendars using the Calendar methods. We also better learned how to use the Beautiful Soup Library to scrape the web. 
 
 ## What’s next for Gradescope Scheduler
-As of right now, Gradescope Scheuler is a bit difficult to set up. It requires that each user must obtain their own Google credentials in order to connect the application to their Google Calendar. We hope to be able to make the application more user friendly so that everyone would be able to use the application. 
+As of right now, Gradescope Scheduler is a bit difficult to set up. It requires that each user must obtain their own Google credentials in order to connect the application to their Google Calendar. We hope to be able to make the application more user friendly so that everyone would be able to use the application. 
 
