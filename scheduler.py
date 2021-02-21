@@ -63,7 +63,7 @@ def get_courses(daSession):
       print(courses_id)
       return True
 
-login("slliu@ucsd.edu","")
+login("slliu@ucsd.edu","Ildbtfmo35!!")
 
 
 #connection.get_courses() dsfdsaf
