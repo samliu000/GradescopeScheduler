@@ -64,7 +64,5 @@ def get_courses(daSession):
 
 login("jdn004@ucsd.edu","put realpass")
 
-#connection = Connection()
-#connection.login(os.getenv("login"), os.getenv("password"))
-#connection.login("realemail", "realpass")
+
 #connection.get_courses() dsfdsaf
