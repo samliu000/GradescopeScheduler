@@ -74,12 +74,18 @@ def access():
     allCourseAssignments = []
     for courseUrl in allCourseURLs:
       allCourseAssignments = getAssignments(courseUrl, daSession)
-      
+    first = True
     for hi in allCourseAssignments:
-      print(hi.title + " "  + hi.dueDateTime)
+        if(first):
+            first = False  
+            continue
+        print(hi.title + " "  + hi.dueDateTime)
+        processSingleAssignment(gsID, hi.title, hi.dueDateTime, service)
+
+    
 
 def parseDate(date):
-    
+    print("Parsing Date: " + date)
     #Splits string
     subStrs = date.split(" ", 2)
     months_dict = {
