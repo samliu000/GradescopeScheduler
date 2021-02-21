@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 import requests
 from bs4 import BeautifulSoup
 from enum import Enum
 import os
-from login import Connection
+# from login import Connection
 
 
 def login(email, pswd):
@@ -62,7 +63,7 @@ def get_courses(daSession):
       print(courses_id)
       return True
 
-login("jdn004@ucsd.edu","put realpass")
+login("slliu@ucsd.edu","")
 
 
 #connection.get_courses() dsfdsaf
