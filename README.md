@@ -1,3 +1,8 @@
+# GradescopeScheduler
+--------------------------
+## Video Demo Link
+https://youtu.be/JKIVjoyBrts
+
 ## Inspiration
 As a student, keeping track of deadlines is important, especially with everything being virtual. Unfortunately, Gradescope, a website that allows professors to grade with ease, does not remind you about upcoming assignments. But, Google Calendar does. By creating this application, we are able to keep track of our Gradescope assignments using google calendar, effectively saving our grades. 
 
