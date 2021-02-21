@@ -43,7 +43,7 @@ def login(daSession, email, pswd):
     #print(login_resp.history[0])
     if len(login_resp.history) != 0:
         if login_resp.history[0].status_code == requests.codes.found:
-            print("Login Sucess")
+            print("Login Success")
             #print("It worked yay")
             return True
     else:
@@ -99,8 +99,8 @@ def getAssignments(courseURL, daSession):
     # find title
     allText = assignment.text
 
-    # print("printing assignment");
-    # print(allText)
+    print("printing assignment");
+    print(allText)
 
     title = "Filler"
     
@@ -115,6 +115,8 @@ def getAssignments(courseURL, daSession):
       title = allText[0:slashIndex - 1]
 
     # find due date/time
+    if(allText.find('Due Date') < 0):
+      continue
     indexOfDueDate = allText.find('Due Date') + 10
     time = allText[indexOfDueDate:indexOfDueDate+17]
     

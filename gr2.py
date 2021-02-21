@@ -67,19 +67,26 @@ def access():
     # get list of assignment
     daSession = requests.Session()
 
-    login(daSession, "slliu@ucsd.edu","Ildbtfmo35!!")
+    print("Enter your email: ")
+    email = input()
+    print(email)
+    print("Enter your password: ")
+    password = input()
+    print(password)
+
+    login(daSession, email,password)
 
     allCourseURLs = get_courses(daSession)
     
     allCourseAssignments = []
     for courseUrl in allCourseURLs:
-      allCourseAssignments = getAssignments(courseUrl, daSession)
-    first = True
+      temp = getAssignments(courseUrl, daSession)
+      allCourseAssignments.extend(temp)
+    
     for hi in allCourseAssignments:
-        if(first):
-            first = False  
+        if (hi == None) or (hi.dueDateTime == "") or (hi.title == ""):
             continue
-        print(hi.title + " "  + hi.dueDateTime)
+        print(hi.title + "\n"  + hi.dueDateTime)
         processSingleAssignment(gsID, hi.title, hi.dueDateTime, service)
 
     
