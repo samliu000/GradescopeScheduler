@@ -1,5 +1,4 @@
 # GradescopeScheduler
---------------------------
 ## Video Demo Link
 https://youtu.be/JKIVjoyBrts
 
